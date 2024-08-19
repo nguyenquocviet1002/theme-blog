@@ -1,0 +1,23 @@
+.footer_bnews_1_0_0 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.footer_bnews_1_0_0__inner {
+  border-top: 3px solid #d9d9d9;
+  display: flex;
+  padding: 10px 0;
+}
+.footer_bnews_1_0_0__col {
+  margin: 0 5px;
+}
+.footer_bnews_1_0_0__link {
+  margin-bottom: 10px;
+  display: block;
+}
+.footer_bnews_1_0_0__link:hover {
+  color: #ff8c38 !important;
+  text-decoration: underline;
+}
+.footer_bnews_1_0_0__link--1 {
+  font-weight: 700;
+}/*# sourceMappingURL=footer_bnews_1_0_0.css.map */

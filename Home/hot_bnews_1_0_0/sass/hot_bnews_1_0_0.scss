@@ -1,0 +1,126 @@
+.intro_bnews_1_0_0 {
+  padding: 30px 0;
+  &__inner {
+    display: flex;
+  }
+  &__left,
+  &__right {
+    width: 25%;
+  }
+  &__left {
+    margin-right: 30px;
+  }
+  &__main {
+    width: 50%;
+    margin-right: 30px;
+  }
+  &__item {
+    &--1 {
+      display: flex;
+      align-items: flex-start;
+      &:not(:last-child) {
+        border-bottom: 1px solid #e3e3e3;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &--2 {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__thumb {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    &--1 {
+      margin-right: 10px;
+      width: 35%;
+      padding-top: 25%;
+    }
+    &--2 {
+      margin-bottom: 10px;
+      padding-top: 75%;
+    }
+    &--3 {
+      margin-bottom: 5px;
+      padding-top: 55%;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    cursor: pointer;
+    > a {
+      transition: all 0.25s ease;
+    }
+    &:hover > a {
+      color: #ff8c38;
+    }
+    &--1 {
+      width: 65%;
+      font-size: 14px;
+    }
+    &--2 {
+      font-size: 18px;
+    }
+    &--3 {
+      font-size: 16px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+  @media (max-width: 767px) {
+    &__inner {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      order: 2;
+    }
+    &__main {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+      order: 1;
+    }
+    &__right {
+      width: 100%;
+      order: 3;
+    }
+    &__item {
+      &--1 {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+    &__thumb {
+      &--1 {
+        padding-top: 20%;
+      }
+      &--2, &--3 {
+        padding-top: 55%;
+      }
+    }
+    &__title {
+      &--1,
+      &--2,
+      &--3 {
+        font-size: 16px;
+      }
+    }
+  }
+}

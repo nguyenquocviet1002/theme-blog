@@ -1,0 +1,25 @@
+.detail_bnews_1_0_0 {
+  margin: 20px 0;
+}
+.detail_bnews_1_0_0__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.detail_bnews_1_0_0__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.detail_bnews_1_0_0__cate > a {
+  font-weight: 700;
+  margin: 0 5px;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+.detail_bnews_1_0_0__cate > a:hover {
+  color: #ff8c38 !important;
+}/*# sourceMappingURL=detail_bnews_1_0_0.css.map */
