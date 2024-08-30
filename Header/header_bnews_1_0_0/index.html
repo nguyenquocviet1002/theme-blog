@@ -23,6 +23,7 @@
                         </li>
                         <li class="header_bnews_1_0_0__item">
                             <a href="#">Sàn Giao Dịch</a>
+                            <span class="header_bnews_1_0_0__arrow">&#10095;</span>
                             <ul class="header_bnews_1_0_0__sub">
                                 <li class="header_bnews_1_0_0__itemSub">
                                     <a href="#">Trang Chủ</a>
@@ -72,6 +73,34 @@
         similique sequi nobis harum necessitatibus et in, repudiandae ex molestiae blanditiis amet vero nemo qui!</p>
 
     <script src="js/header_bnews_1_0_0.js"></script>
+    <script>
+        const hoverEffect = () => {
+            const elms = document.querySelectorAll('.header_bnews_1_0_0__item');
+            elms.forEach(elm => {
+                const subMenu = elm.querySelector('.header_bnews_1_0_0__sub');
+                elm.addEventListener('mouseover', () => {
+                    if(subMenu)subMenu.style.display = 'block';
+                });
+                elm.addEventListener('mouseout', () => {
+                    if(subMenu)subMenu.style.display = 'none';
+                });
+            })
+        };
+        const clickEffect = () => {
+            const elms = document.querySelectorAll('.header_bnews_1_0_0__arrow');
+            elms.forEach(elm => {
+                const subMenu = elm.parentNode.querySelector('.header_bnews_1_0_0__sub');
+                elm.addEventListener('click', () => {
+                    if(subMenu)subMenu.classList.toggle('show');
+                });
+            })
+        }
+        if(innerWidth > 1024){
+            hoverEffect();
+        } else {
+            clickEffect();
+        }
+    </script>
 </body>
 
 </html>
